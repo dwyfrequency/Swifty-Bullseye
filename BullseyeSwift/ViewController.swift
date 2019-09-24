@@ -19,11 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var targetNumLabel: UILabel!
     
     
-    
     @IBAction func sliderMoved(_ slider: UISlider) {
         print("The value of the slider is now: \(slider.value)")
     }
     
-
 }
 
