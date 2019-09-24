@@ -23,5 +23,9 @@ class ViewController: UIViewController {
         print("The value of the slider is now: \(slider.value)")
     }
     
+    @IBAction func showAlert(_ sender: UIButton) {
+        print("blem")
+    }
+    
 }
 
