@@ -9,18 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var currentValue: Int = 50
+    var currentValue: Int = 0
   
-  
+    @IBOutlet weak var targetNumLabel: UILabel!
+    @IBOutlet weak var slider: UISlider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         targetNumLabel.text = String(121)
+        currentValue = Int(slider.value)
     }
 
-    @IBOutlet weak var targetNumLabel: UILabel!
-    
+  
+  
     
     @IBAction func sliderMoved(_ slider: UISlider) {
         print("The value of the slider is now: \(slider.value)")
